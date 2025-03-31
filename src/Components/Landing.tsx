@@ -54,8 +54,7 @@ const Landing = ({ onCameraClick, onUploadClick }: Props) => {
           <h1 className="text-4xl font-cursive font-semibold mb-8 mt-24 text-[#5A2A0C] text-center">
             My Vintage Photobooth
           </h1>
-
-          {/* Buttons */}
+ 
           {/* Buttons */}
           <div className="flex gap-4">
             <button
