@@ -100,6 +100,7 @@ function CameraPage({ onDone }: CameraPageProps) {
         ref={videoRef} 
         className="w-72 h-72 rounded-lg shadow-lg object-cover filter grayscale"
         autoPlay
+        playsInline
         muted
       />
 
