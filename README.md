@@ -34,8 +34,8 @@ https://github.com/user-attachments/assets/dc963501-bef3-4e78-a71d-9daf5c2a61da
 Clone the project and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/my-vintage-photobooth.git
-cd my-vintage-photobooth
+git clone https://github.com/Kumushai9919/MyPhotoBooth.git
+cd MyPhotoBooth
 npm install
 ```
 Start the development server:

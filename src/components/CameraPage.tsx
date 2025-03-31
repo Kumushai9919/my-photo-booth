@@ -47,8 +47,11 @@ function CameraPage({ onDone }: CameraPageProps) {
 
     const ctx = canvas.getContext("2d");
     if (ctx) {
+      ctx.translate(canvas.width, 0);
+      ctx.scale(-1, 1);
       // Draw the video frame onto the canvas
       ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      
 
       // Apply Black & White Filter
       const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -75,12 +78,12 @@ function CameraPage({ onDone }: CameraPageProps) {
   const startPhotoSequence = () => {
     setIsPreparing(true);
     setCountdown(null);
- 
+
     setTimeout(() => {
       setIsPreparing(false);
       let count = 3;
       setCountdown(count);
- 
+
       const interval = setInterval(() => {
         count -= 1;
         if (count > 0) {
@@ -97,8 +100,8 @@ function CameraPage({ onDone }: CameraPageProps) {
   return (
     <div className="relative min-h-screen bg-black flex flex-col items-center justify-center text-white">
       <video
-        ref={videoRef} 
-        className="w-72 h-72 rounded-lg shadow-lg object-cover filter grayscale"
+        ref={videoRef}
+        className="w-72 h-72 rounded-lg shadow-lg object-cover filter grayscale transform scale-x-[-1]"
         autoPlay
         playsInline
         muted
