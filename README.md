@@ -1,7 +1,7 @@
-# 📸 My Vintage Photobooth
+# 📸 My Vintage Photobooth 
 
-A playful and nostalgic web app built with **React + TypeScript**, where users can take or upload 4 photos, customize a photo strip with color themes, notes, and date stamps — and download the final vintage strip with animation. Ideal for sharing sweet memories with a retro twist.
-
+I love visiting vintage photobooths🤎 to capture memories and take fun selfies — so I decided to build my own version!
+This playful and nostalgic web app is built with React + TypeScript, allowing users to take or upload 3 photos, customize a photo strip with color themes, notes, and date stamps, and download the final strip. Perfect for creating and sharing retro-style memories.
 
 
 ![Screenshot 2025-04-01 at 1 55 00 AM](https://github.com/user-attachments/assets/b1d81d4c-719d-4708-9d99-8b1a87b4a36e)
