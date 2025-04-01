@@ -25,8 +25,7 @@ export default function GeneratePhotoStrip(
           pixelCrop.width,
           pixelCrop.height
         );
-
-        // ✅ Apply Black & White Filter
+ 
         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
         for (let i = 0; i < imageData.data.length; i += 4) {
           const avg =

@@ -13,7 +13,7 @@ export async function generateFinalPhotoStrip({
 }): Promise<string> {
   const width = 600;
   const photoSize = 500;
-  const margin = 20; // 👈 smaller margin like real photobooths
+  const margin = 20; 
   const topMargin = 32;
   const noteHeight = 80;
   const dateHeight = showDate ? 40 : 0;

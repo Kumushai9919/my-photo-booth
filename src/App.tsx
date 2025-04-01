@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Landing from "./components/Landing";
 import Upload from "./components/Upload";
 import Customization from "./components/Customization";
 import PhotoStripPreview from "./components/PhotoStripPreview";
-import CameraPage from "./components/CameraPage"; 
+import CameraPage from "./components/CameraPage";
 
 function App() {
-  const [step, setStep] = useState<"landing" | "upload" | "customize" | "preview" | "camera">("landing");
+  const [step, setStep] = useState<
+    "landing" | "upload" | "customize" | "preview" | "camera"
+  >("landing");
   const [uploadedImages, setUploadedImages] = useState<string[]>([]);
   const [customData, setCustomData] = useState<{
     images: string[];
-    note: string; 
+    note: string;
     frameColor: string;
-    showDate: boolean; 
+    showDate: boolean;
   } | null>(null);
 
   return (
@@ -55,9 +57,9 @@ function App() {
       {step === "preview" && customData && (
         <PhotoStripPreview
           images={customData.images}
-          note={customData.note} 
+          note={customData.note}
           frameColor={customData.frameColor}
-          showDate={customData.showDate} 
+          showDate={customData.showDate}
         />
       )}
     </>
